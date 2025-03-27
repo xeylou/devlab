@@ -1,8 +1,8 @@
----
-- name: Purge a lxc container or a vm
+- name: Create a lxc container
   hosts: localhost
   vars_files:
     - vars/pve-dc-error-systems.yml
     - vaults/vault.yml
   roles:
     - pve_purge
+    - pve_lxc_create
