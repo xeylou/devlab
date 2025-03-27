@@ -1,0 +1,8 @@
+---
+- name: Purge
+  hosts: localhost
+  vars_files:
+    - vars/pve1-dc-error-systems.yml
+    - vaults/vault.yml
+  roles:
+    - pve_purge
